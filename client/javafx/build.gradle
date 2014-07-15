@@ -1,0 +1,39 @@
+/*
+ * This generated file contains a commented-out sample Java project to get you started.
+ * For more details take a look at the Java Quickstart chapter in the Gradle
+ * user guide available at http://gradle.org/docs/2.0/userguide/tutorial_java_projects.html
+ */
+
+apply from: 'javafx.plugin'
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+
+javafx {
+    appID 'SimpleIM_client'
+    appName 'SimpleIM'
+    mainClass 'org.simpleim.client.MainApp'
+
+    // deploy/info attributes
+    category = 'Demos'
+    copyright = 'Copyright (c) 2013-2014 Bai-Jie&rogetfan'
+    description = 'This is a simple IM(Instant Message) applicatio.'
+    licenseType = 'Apache 2.0'
+    vendor = 'org.simpleim'
+    installSystemWide = false
+    menu = true
+    shortcut = true
+
+    // app icons
+    icons {
+        // path relative to src/deploy/package directory
+        shortcut = '../../main/resources/images/icon.png'
+        // volume = 'javafx-icon.png'
+        setup = '../../main/resources/images/icon.png'
+    }
+}
+
+dependencies {
+    compile project(':common')
+    compile 'org.controlsfx:controlsfx:8.0.6'
+}

@@ -1,0 +1,11 @@
+/*
+ * This generated file contains a commented-out sample Java project to get you started.
+ * For more details take a look at the Java Quickstart chapter in the Gradle
+ * user guide available at http://gradle.org/docs/2.0/userguide/tutorial_java_projects.html
+ */
+
+dependencies {
+    compile project(':common')
+    compile 'mysql:mysql-connector-java:5.1.31'
+    compile 'com.lambdaworks:scrypt:1.4.0'
+}
